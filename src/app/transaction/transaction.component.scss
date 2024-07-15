@@ -1,0 +1,62 @@
+.trans-box {
+  width: 100%;
+  h3 {
+    margin: auto;
+  }
+  p {
+    margin: auto;
+  }
+  ion-icon {
+    font-size: 30px;
+  }
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
+.trans-info {
+  flex-grow: 1;
+}
+
+.trans-name {
+  flex: 50%;
+  h3 {
+    font-size: 17px;
+  }
+}
+
+.trans-amount {
+  flex: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.trans-date {
+  flex: 50%;
+  p {
+    color: #aaaaaa;
+    font-size: 13px;
+  }
+}
+
+.trans-type {
+  flex: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.trans-top {
+  display: flex;
+}
+
+.trans-bottom {
+  display: flex;
+}
+
+.sent-text {
+  color: #aaaaaa;
+}
+
+.recieved-text {
+  color: green;
+}

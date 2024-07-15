@@ -1,0 +1,201 @@
+#header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 1rem;
+
+  #avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .info {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+  ion-icon {
+    padding-top: 10px;
+    font-size: 25px;
+  }
+}
+
+.vline {
+  border-left: 1px solid rgb(58, 58, 58);
+  height: 30px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.balance-container {
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  border-radius: 20px;
+  gap: 45px;
+  color: #ffffff;
+  background: rgb(4, 4, 130);
+  background: linear-gradient(
+    29deg,
+    rgba(4, 4, 130, 1) 9%,
+    rgba(111, 124, 181, 1) 33%,
+    rgba(209, 217, 255, 1) 64%,
+    rgba(217, 220, 255, 1) 74%,
+    rgba(132, 132, 255, 1) 89%
+  );
+}
+
+.balance-top {
+  flex: 50%;
+}
+
+.balance-bottom {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.balance-text {
+  padding: 0%;
+  justify-content: end;
+  align-items: end;
+  p {
+    color: #d1d1d1;
+    margin-bottom: auto;
+  }
+}
+
+.balance-info {
+  display: flex;
+  align-items: center;
+  gap: 20%;
+}
+
+.balance-value {
+  flex: 50%;
+  h2 {
+    margin-top: 10px;
+  }
+}
+
+.balance-button {
+  flex: 50%;
+  display: flex;
+  justify-content: flex-end;
+
+  ion-button {
+    color: black;
+  }
+}
+
+.info-container {
+  display: flex;
+  gap: 20px;
+}
+
+.recieved {
+  padding: 10px;
+  flex: 50%;
+  background: black;
+  h5 {
+    color: #ffffff;
+  }
+  h6 {
+    color: #aaaaaa;
+  }
+  border-radius: 20px;
+}
+
+.payments {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  gap: 5px;
+  outline: 1px solid rgb(121, 121, 121);
+  border-radius: 20px;
+
+  hr {
+    border: none;
+    border-top: 1px solid #c9c9c9;
+    margin: 0 0;
+  }
+}
+
+.payments-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  h2 {
+    font-weight: 600;
+  }
+}
+
+.payments-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.payments-title {
+  h5 {
+    font-size: 16px;
+    margin: auto;
+  }
+  h6 {
+    font-size: 14px;
+    color: #9e9e9e;
+    margin: auto;
+  }
+}
+
+button {
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-transform: initial;
+  color: black;
+  background-color: #ffffff;
+  font-size: 1.1rem;
+  height: 4vh;
+}
+
+.circle {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgb(34, 34, 34);
+  color: white;
+  text-align: center;
+
+  h2 {
+    font-size: 15px;
+    line-height: 0px;
+  }
+}
+
+.transactions-container {
+  hr {
+    border: none;
+    border-top: 1px solid #9e9e9e;
+    margin: 20px 0;
+  }
+}
+
+.trans-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}

@@ -1,0 +1,168 @@
+#header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 1rem;
+
+  #avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .info {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+  ion-icon {
+    padding-top: 10px;
+    font-size: 25px;
+  }
+}
+
+.vline {
+  border-left: 1px solid rgb(58, 58, 58);
+  height: 30px;
+}
+
+ion-searchbar {
+  --box-shadow: none;
+  --background: #eef7f1;
+  --border-radius: 1rem;
+  --placeholder-font-weight: 600;
+  --placeholder-opacity: 0.3;
+
+  padding: 0;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+#banner {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.list-title {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+  p {
+    color: #777777;
+    font-size: 15px;
+    margin: 0;
+  }
+}
+
+.greentext {
+  color: rgb(0, 153, 77);
+}
+
+.product-container {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.product-box {
+  box-shadow: rgb(0, 0, 0 / 10) 2px, 4px, 20px, 3px;
+  border-radius: 10px;
+  margin: 0;
+  padding-top: 1.2rem;
+
+  .product-img {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .product-desc {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+.all-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #f4f4f4;
+}
+
+.public-stats {
+  padding-left: 15px;
+  padding-top: 5px;
+  border-radius: 8%;
+  background-color: rgb(84, 0, 84);
+}
+
+.my-stats {
+  padding-top: 5px;
+  padding-left: 15px;
+  border-radius: 8%;
+  background-color: rgb(84, 0, 84);
+}
+
+.featured-assets {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.featured-box {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  h4 {
+    margin: 0;
+  }
+  h5 {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgb(34, 34, 34);
+  color: white;
+}
+
+.featured-logo {
+  flex: 10%;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.featured-name {
+  flex: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-value {
+  flex: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}

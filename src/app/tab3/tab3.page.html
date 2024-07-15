@@ -1,17 +1,106 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding">
+  <div id="header" class="ion-margin-bottom">
+    <div id="location">
+      <h3 class="ion-no-margin"><span class="highlight">q</span>pay</h3>
+    </div>
+    <div class="vline"></div>
+    <div id="avatar">
+      <ion-img src="../../assets/avatar.png"></ion-img>
+    </div>
+    <div class="info">
+      <div class="name">
+        <p>Jacob Jurgens</p>
+      </div>
+      <div class="noti">
+        <ion-icon name="notifications-outline"></ion-icon>
+      </div>
+    </div>
+  </div>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="list-title">
+    <p>Your capital</p>
+    <h1>$15,627.00</h1>
+    <p><span class="greentext"> ^ $1,417.00 (+9%) </span> Last 3 months</p>
+  </div>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <div class="all-stats">
+    <canvas #healthGraph height="300"></canvas>
+  </div>
+
+  <div class="featured">
+    <div class="featured-title">
+      <h1>Featured assets</h1>
+    </div>
+    <div class="featured-assets">
+      <div class="featured-box">
+        <div class="featured-logo">
+          <div class="circle">
+            <ion-icon class="logo" name="logo-google"></ion-icon>
+          </div>
+        </div>
+        <div class="featured-name">
+          <div class="f-name">
+            <h4>Google</h4>
+          </div>
+          <div class="f-type">
+            <p>Services</p>
+          </div>
+        </div>
+        <div class="featured-value">
+          <div class="f-value">
+            <h5>$8,260.00</h5>
+          </div>
+          <div class="f-percent">
+            <p>+4.00%</p>
+          </div>
+        </div>
+      </div>
+      <div class="featured-box">
+        <div class="featured-logo">
+          <div class="circle">
+            <ion-icon class="logo" name="logo-amazon"></ion-icon>
+          </div>
+        </div>
+        <div class="featured-name">
+          <div class="f-name">
+            <h4>Amazon</h4>
+          </div>
+          <div class="f-type">
+            <p>Services</p>
+          </div>
+        </div>
+        <div class="featured-value">
+          <div class="f-value">
+            <h5>$8,260.00</h5>
+          </div>
+          <div class="f-percent">
+            <p>+4.00%</p>
+          </div>
+        </div>
+      </div>
+      <div class="featured-box">
+        <div class="featured-logo">
+          <div class="circle">
+            <ion-icon class="logo" name="logo-microsoft"></ion-icon>
+          </div>
+        </div>
+        <div class="featured-name">
+          <div class="f-name">
+            <h4>Microsoft</h4>
+          </div>
+          <div class="f-type">
+            <p>Technology</p>
+          </div>
+        </div>
+        <div class="featured-value">
+          <div class="f-value">
+            <h5>$8,260.00</h5>
+          </div>
+          <div class="f-percent">
+            <p>+4.00%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>

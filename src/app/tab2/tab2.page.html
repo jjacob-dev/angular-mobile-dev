@@ -1,17 +1,61 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding">
+  <div id="header" class="ion-margin-bottom">
+    <div id="location">
+      <h3 class="ion-no-margin"><span class="highlight">q</span>pay</h3>
+    </div>
+    <div class="vline"></div>
+    <div id="avatar">
+      <ion-img src="../../assets/avatar.png"></ion-img>
+    </div>
+    <div class="info">
+      <div class="name">
+        <p>Jacob Jurgens</p>
+      </div>
+      <div class="noti">
+        <ion-icon name="notifications-outline"></ion-icon>
+      </div>
+    </div>
+  </div>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="list-title">
+    <h1>Make a payment</h1>
+  </div>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div class="payment-container">
+    <div class="payment-info">
+      <div class="payment-icon">
+        <ion-icon name="card-outline"></ion-icon>
+      </div>
+      <div class="payment-details">
+        <div class="payment-text">
+          <div class="payment-name">
+            <h3>qpay Balance</h3>
+          </div>
+          <div class="payment-amount">
+            <p>$24,305.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="payment-inputs">
+    <ion-item>
+      <ion-input placeholder="qpayID/Email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="number" placeholder="Amount"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input placeholder="Description"></ion-input>
+    </ion-item>
+  </div>
+
+  <div class="submit">
+    <ion-button shape="round" color="primary" fill="outline" routerLink="/login"
+      >Submit</ion-button
+    >
+  </div>
 </ion-content>

@@ -1,17 +1,97 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding">
+  <div id="header" class="ion-margin-bottom">
+    <div id="location">
+      <h3 class="ion-no-margin"><span class="highlight">q</span>pay</h3>
+    </div>
+    <div class="vline"></div>
+    <div id="avatar">
+      <ion-img src="../../assets/avatar.png"></ion-img>
+    </div>
+    <div class="info">
+      <div class="name">
+        <p>Jacob Jurgens</p>
+      </div>
+      <div class="noti">
+        <ion-icon name="notifications-outline"></ion-icon>
+      </div>
+    </div>
+  </div>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="main-container">
+    <div class="balance-container">
+      <div class="balance-top">
+        <div class="circle"><h2>$</h2></div>
+      </div>
+      <div class="balance-bottom">
+        <div class="balance-text">
+          <p>Your balance is</p>
+        </div>
+        <div class="balance-info">
+          <div class="balance-value">
+            <h2>$24,305.00</h2>
+          </div>
+          <div class="balance-button">
+            <button (click)="openModal()">Withdraw</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <div class="info-container">
+      <div class="recieved">
+        <div class="recieved-title">
+          <h5>Investments</h5>
+          <h6>$15,627.00 (+9%)</h6>
+        </div>
+        <div class="recieved-graph"></div>
+      </div>
+
+      <div class="payments">
+        <div class="payments-title">
+          <h5>Payments</h5>
+          <h6>This month</h6>
+        </div>
+        <div class="payments-info">
+          <div class="payments-box">
+            <div><h2>2</h2></div>
+            <div><p>Incoming</p></div>
+          </div>
+          <hr />
+          <div class="payments-box">
+            <div><h2>1</h2></div>
+            <div><p>Outgoing</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="transactions-container">
+      <div class="trans-title">
+        <h2>Transactions</h2>
+      </div>
+
+      <hr />
+
+      <div class="trans-list">
+        <app-transaction
+          type="sent"
+          name="Mitchell Parkson"
+          date="Jun 24, 2024"
+          amount="$22.50"
+        ></app-transaction>
+        <app-transaction
+          type="recieved"
+          name="John Doe"
+          date="Jun 22, 2024"
+          amount="$16.25"
+        ></app-transaction>
+        <app-transaction
+          type="recieved"
+          name="Jacob Ross"
+          date="Jun 18, 2024"
+          amount="$321.00"
+        ></app-transaction>
+      </div>
+    </div>
+  </div>
 </ion-content>

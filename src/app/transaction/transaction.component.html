@@ -1,0 +1,26 @@
+<div class="trans-box">
+  <div class="trans-icon">
+    <ion-icon *ngIf="type == 'sent'" name="trending-down-outline"></ion-icon>
+    <ion-icon *ngIf="type == 'recieved'" name="trending-up-outline"></ion-icon>
+  </div>
+  <div class="trans-info">
+    <div class="trans-top">
+      <div class="trans-name">
+        <h3>{{ name }}</h3>
+      </div>
+      <div class="trans-amount">
+        <div *ngIf="type == 'sent'">- {{ amount }}</div>
+        <div *ngIf="type == 'recieved'">{{ amount }}</div>
+      </div>
+    </div>
+    <div class="trans-bottom">
+      <div class="trans-date">
+        <p>{{ date }}</p>
+      </div>
+      <div class="trans-type">
+        <div *ngIf="type == 'sent'" class="sent-text">Sent</div>
+        <div *ngIf="type == 'recieved'" class="recieved-text">Recieved</div>
+      </div>
+    </div>
+  </div>
+</div>
